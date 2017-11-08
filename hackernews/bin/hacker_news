@@ -1,0 +1,9 @@
+#!/usr/bin/env ruby
+
+#This hacker_news.rb file in this bin folder will be my executable file and should always have the shebang which tells the computer the language we are writing our
+#program. In this case we are using ruby language
+
+require_relative'../lib/hackernews'
+
+#This is a new instance of my CLI class and here I run my first method from the cli which I named (news)
+HackerNews::CLI.new.news
