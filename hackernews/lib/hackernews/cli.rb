@@ -28,6 +28,7 @@ class HackerNews::CLI
       puts "We cannot display more than 20 articles at a time!"
       menu #this will return the user to the beginning
      end
+
   end
 
 end

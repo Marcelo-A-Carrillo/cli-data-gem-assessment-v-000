@@ -8,10 +8,16 @@ class HackerNews::API
   def self.newslist
    #here I used rest client to open the API data
    hacker_news_data = RestClient.get('https://newsapi.org/v1/articles?source=hacker-news&sortBy=latest&apiKey=c41ac09c395a47a39b72a936ec604918')
+   #hacker_news_data = RestClient.get('https://newsapi.org/v1/sources?language=en')
    #calling JSON to parse the data
+
    @news_hash = JSON.parse(hacker_news_data)
-   @news_hash["source"].each do |news|
+   #binding.pry
+   @news_hash["articles"].each do |news|
    HackerNews::NEWSLIST.new_from_json(news)
+
+   end
   end
-  #binding.pry
-  end
+
+
+end

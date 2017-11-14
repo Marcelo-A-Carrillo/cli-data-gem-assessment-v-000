@@ -1,10 +1,10 @@
 #!/usr/bin/env ruby
 class HackerNews::NEWSLIST
-
+attr_accessor :author, :title, :description, :source, :url
 @@all = []
 
-  def self.new_from_json(news)
-    self.newslist(
+  def self.new_from_json(hacker_news_data)
+    self.new(
      hacker_news_data["author"],
      hacker_news_data["title"],
      hacker_news_data["description"],
@@ -22,6 +22,10 @@ class HackerNews::NEWSLIST
       @url = url
       binding.pry
       @@all << self
+  end
+
+  def self.all
+    @@all
   end
 
 end

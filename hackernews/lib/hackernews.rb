@@ -8,6 +8,6 @@ require 'json'
 require 'pry'
 
 require_relative "./hackernews/version"
-require_relative "./hackernews/api"
 require_relative "./hackernews/cli"
+require_relative "./hackernews/api"
 require_relative "./hackernews/newslist"
