@@ -44,7 +44,10 @@ end
     if userarticle == "yes"
        listarticle
      else
+       puts ""
+       puts "---------------------------------------------------------------"
        puts "Thank you for visit us, Happy Reading!"
+       puts "---------------------------------------------------------------"
        exit
     end
   end
