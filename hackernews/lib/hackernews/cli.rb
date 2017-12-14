@@ -39,7 +39,7 @@ end
     puts "Description: #{userarticle.description}" if userarticle.description
     puts "Source: #{userarticle.source}" if userarticle.source
     puts "Url: #{userarticle.url}" if userarticle.url
-#<<<<<<< HEAD
+
 
 
     puts ""
