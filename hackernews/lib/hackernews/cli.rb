@@ -43,7 +43,7 @@ end
     puts "Do you want to read another article? Please Enter, Yes or No"
     userarticle = gets.strip.downcase
     if userarticle == "yes"
-       listarticle
+       menu
      else
        puts ""
        puts "-----------------------------------------------------"
