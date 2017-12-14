@@ -46,7 +46,7 @@ end
      else
        puts ""
        puts "---------------------------------------------------------------"
-       puts "Thank you for visit us, Happy Reading!"
+       puts "\t\tThank you for visit us, Happy Reading!"
        puts "---------------------------------------------------------------"
        exit
     end
