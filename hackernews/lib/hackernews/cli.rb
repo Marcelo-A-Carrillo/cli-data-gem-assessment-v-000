@@ -51,5 +51,5 @@ end
      else
        puts "Thank you for visit us, Happy Reading!"
        exit
-          end
+    end
   end
