@@ -24,8 +24,6 @@ class HackerNews::CLI
       puts ""
   end
 
-
-
   def listarticle
       HackerNews::NEWSLIST.all.each.with_index(1) do | articles,  index |
       puts "#{index}. #{articles.title}"
