@@ -13,6 +13,7 @@ class HackerNews::CLI
       menu
   end
 
+
   def menu
       puts ""
       puts "Please Choose The Article You Want To Read To Get More Details"
