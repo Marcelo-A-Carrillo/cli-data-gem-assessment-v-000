@@ -37,7 +37,7 @@ end
     puts "Description: #{userarticle.description}" if userarticle.description
     puts "Source: #{userarticle.source}" if userarticle.source
     puts "Url: #{userarticle.url}" if userarticle.url
-    
+
     puts ""
     puts "Do you want to read another article? Please Enter, Yes or No"
     userarticle = gets.strip.downcase
