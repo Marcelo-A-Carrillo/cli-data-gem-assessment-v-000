@@ -48,9 +48,10 @@ end
     if input == "yes"
        listarticle
 
-      if input == "No"
-       puts "Thank you for stop by and reading!"
-     end
+     else
+       puts "Thank you for visit us, Happy Reading!"
+       exit
+          end
   end
 #=======
     puts ""
