@@ -53,16 +53,3 @@ end
        exit
           end
   end
-#=======
-    puts ""
-    puts "Do you want to read more news? Please, Enter Yes or No"
-
-    puts = gets.strip.downcase
-    if input == "yes"
-       input #puts "the News list goes here"
-     else
-       puts "Thank you for visit us, Happy Reading!"
-       exit
-     end
-  end
- end
