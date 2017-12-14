@@ -24,6 +24,28 @@ class HackerNews::CLI
       puts ""
   end
 
+def news #this is  my call method that I named news
+    puts "\t================================================\t"
+    puts "\t\tWelcome To The Latest Hacker News"
+    puts "\t================================================\t"
+    puts ""
+    HackerNews::API.newslist
+    menu
+end
+
+
+def menu
+    puts ""
+    puts "Please Choose The Article You Want To Read To Get More Details"
+    puts "---------------------------------------------------------------"
+    listarticle
+    input = gets.strip.to_i #this is an input from the user that returns an integer value when the user select their option
+    userarticle = HackerNews::NEWSLIST.find(input)
+    articledetails(userarticle)
+    puts ""
+end
+#>>>>>>> 238dd8144b3ba07eba26396b383379368a3ab1f7
+
 
   def listarticle
       HackerNews::NEWSLIST.all.each.with_index(1) do | articles,  index |
@@ -38,6 +60,7 @@ end
     puts "Description: #{userarticle.description}" if userarticle.description
     puts "Source: #{userarticle.source}" if userarticle.source
     puts "Url: #{userarticle.url}" if userarticle.url
+#<<<<<<< HEAD
 
 
     puts ""
@@ -50,5 +73,16 @@ end
        puts "Thank you for stop by and reading!"
      end
   end
+#=======
+    puts ""
+    puts "Do you want to read more news? Please, Enter Yes or No"
+
+    puts = gets.strip.downcase
+    if input == "yes"
+       input #puts "the News list goes here"
+     else
+       puts "Thank you for visit us, Happy Reading!"
+       exit
+     end
+  end
  end
-end
