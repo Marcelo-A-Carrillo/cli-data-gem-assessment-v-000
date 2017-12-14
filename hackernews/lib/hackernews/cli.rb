@@ -43,7 +43,6 @@ end
     userarticle = gets.strip.downcase
     if input == "yes"
        listarticle
-
      else
        puts "Thank you for visit us, Happy Reading!"
        exit
