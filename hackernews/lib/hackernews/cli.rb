@@ -24,27 +24,6 @@ class HackerNews::CLI
       puts ""
   end
 
-def news #this is  my call method that I named news
-    puts "\t================================================\t"
-    puts "\t\tWelcome To The Latest Hacker News"
-    puts "\t================================================\t"
-    puts ""
-    HackerNews::API.newslist
-    menu
-end
-
-
-def menu
-    puts ""
-    puts "Please Choose The Article You Want To Read To Get More Details"
-    puts "---------------------------------------------------------------"
-    listarticle
-    input = gets.strip.to_i #this is an input from the user that returns an integer value when the user select their option
-    userarticle = HackerNews::NEWSLIST.find(input)
-    articledetails(userarticle)
-    puts ""
-end
-#>>>>>>> 238dd8144b3ba07eba26396b383379368a3ab1f7
 
 
   def listarticle
