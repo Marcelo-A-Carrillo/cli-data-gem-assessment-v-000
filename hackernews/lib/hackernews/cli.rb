@@ -13,6 +13,7 @@ class HackerNews::CLI
       menu
   end
 
+
   def menu
       puts ""
       puts "Please Choose The Article You Want To Read To Get More Details"
@@ -23,7 +24,6 @@ class HackerNews::CLI
       articledetails(userarticle)
       puts ""
   end
-
 
   def listarticle
       HackerNews::NEWSLIST.all.each.with_index(1) do | articles,  index |
@@ -39,16 +39,17 @@ end
     puts "Source: #{userarticle.source}" if userarticle.source
     puts "Url: #{userarticle.url}" if userarticle.url
 
-
     puts ""
     puts "Do you want to read another article? Please Enter, Yes or No"
     userarticle = gets.strip.downcase
-    if input == "yes"
-       listarticle
-
-      if input == "No"
-       puts "Thank you for stop by and reading!"
-     end
+    if userarticle == "yes"
+       menu
+     else
+       puts ""
+       puts "-----------------------------------------------------"
+       puts "\tThank you for visit us, Happy Reading!"
+       puts "-----------------------------------------------------"
+       exit
+    end
   end
- end
 end
